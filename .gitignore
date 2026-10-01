@@ -1,0 +1,63 @@
+# Planejamento privado/local
+/docs-nao-versionada/
+
+# Segredos e configuração local
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+
+# Dados e artefatos gerados
+/data/
+/spool/
+/logs/
+/tmp/
+*.duckdb
+*.duckdb.wal
+*.parquet
+*.arrow
+*.feather
+*.log
+*.pid
+*.tmp
+*.partial
+
+# Python
+.venv/
+venv/
+/analytics/.venv-*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyright/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+.ipynb_checkpoints/
+
+# Go
+/bin/
+*.test
+coverage.out
+coverage-*.out
+
+# Editores e arquivos do sistema
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Metadados locais do ambiente
+.agents/
+.aws/
+.codex/
